@@ -19,7 +19,7 @@ class ContentComponent {
 
   public init(container: HTMLElement = document.body, props?: {}) {
     const rootEl = document.createElement('div')
-    rootEl.className = 'tools-bar-container'
+    rootEl.className = 'content-container'
 
     this.rootEl = rootEl
     container.append(this.rootEl)
@@ -28,17 +28,10 @@ class ContentComponent {
   }
 
   private initBtns() {
-    // Save
     const saveNoteBtnEl = document.createElement('button')
-    saveNoteBtnEl.className = 'tool-btn save-data-btn'
-    saveNoteBtnEl.innerHTML = 'Save'
-    saveNoteBtnEl.addEventListener('click', this.handleSaveNoteBtnClick.bind(this))
+    saveNoteBtnEl.className = 'btn'
+    saveNoteBtnEl.innerHTML = 'Hello world!'
     this.rootEl.append(saveNoteBtnEl)
-
-  }
-
-  private async handleSaveNoteBtnClick(e?: Event) {
-    // TODO:
   }
 }
 

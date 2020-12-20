@@ -4,9 +4,19 @@
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
+    "lib": [
+      "ES2015",
+      "DOM"
+    ],
     "sourceMap": true
   },
-  "types": ["jquery"],
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "types": [
+    "jquery"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

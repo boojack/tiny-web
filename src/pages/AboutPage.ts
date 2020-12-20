@@ -2,7 +2,7 @@ import '../less/main.less'
 import BasePage from '../base/BasePage'
 
 class AboutPage extends BasePage{
-  public title: string = 'Notes'
+  public title: string = 'About me'
   public readonly router: string = '/'
   public params: string = ''
 
@@ -10,7 +10,6 @@ class AboutPage extends BasePage{
     const bodyEl = document.body
     const mainContainerEl = document.createElement('div')
     mainContainerEl.id = 'main-container'
-
     mainContainerEl.innerText = 'Hello, it\'s Lishuang :) '
 
     bodyEl.append(mainContainerEl)
